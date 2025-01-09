@@ -155,15 +155,9 @@ body {
 /* Extra content styles */
 .extra-content {
     display: flex;
-    flex-direction: row;
-    flex-direction: row-reverse;
+    flex-direction: column;
     height: auto;
     width: 100%;
-}
-
-.extra-content:nth-child(even) {
-    flex-direction: row-reverse;
-    flex-direction: row;
 }
 
 /* Image Block Styles */
@@ -210,6 +204,7 @@ body {
     font-size: 15px;
     line-height: 1.5;
 }
+
 
 /* Button Panel styles */
 .button-panel {

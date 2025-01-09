@@ -226,35 +226,15 @@ body {
     color: #576653;
 }
 
-/* Responsive styles */
-@media (max-aspect-ratio: 1/1) {
-    .navbar .menu {
-        display: none;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .extra-content {
-        flex-direction: column;
-    }
+.pt-sans-regular {
+  font-family: "PT Sans", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-@media (min-aspect-ratio: 1/1) {
-    .navbar .hamburger {
-        display: none;
-    }
-
-    .extra-content {
-        flex-direction: row;
-    }
-
-    .extra-content:nth-child(even) {
-        flex-direction: row-reverse;
-    }
-
-    .extra-content .content-block {
-        width: 50%;
-    }
+.pt-sans-bold {
+  font-family: "PT Sans", serif;
+  font-weight: 700;
+  font-style: normal;
 }
+

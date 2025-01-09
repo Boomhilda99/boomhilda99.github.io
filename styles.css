@@ -251,7 +251,7 @@ body {
     }
 
     .extra-content:nth-child(even) {
-        flex-direction: row;
+        flex-direction: row-reverse;
     }
 
     .extra-content .content-block {

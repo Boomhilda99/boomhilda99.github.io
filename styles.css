@@ -155,9 +155,15 @@ body {
 /* Extra content styles */
 .extra-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-direction: row-reverse;
     height: auto;
     width: 100%;
+}
+
+.extra-content:nth-child(even) {
+    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 /* Image Block Styles */

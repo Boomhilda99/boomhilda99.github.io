@@ -1,7 +1,7 @@
 /* General styles */
 body {
     margin: 0;
-    font-family: 'Noto Serif', serif;
+    font-family: 'PT Sans', regular;
     display: flex;
     flex-direction: column;
     min-height: 100vh;

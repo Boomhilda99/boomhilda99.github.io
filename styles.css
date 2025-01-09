@@ -118,8 +118,12 @@ body {
     font-size: 48px;
 }
 
-.top-header .overlay-text .productive {
+.top-header .overlay-text .main-title {
     color: #175800;
+}
+
+.top-header .overlay-text .title-subheading {
+    font-size: 24px;
 }
 
 /* Main content styles */
@@ -270,4 +274,3 @@ body {
   font-weight: 700;
   font-style: normal;
 }
-

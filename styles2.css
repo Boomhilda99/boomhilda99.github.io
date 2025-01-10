@@ -113,7 +113,7 @@ body {
 .top-header .overlay-text {
     position: absolute;
     top: 50%;
-    left: 70px;
+    left: 50%;
     transform: translateY(-50%);
     color: #000000;
     font-size: 48px;

@@ -214,7 +214,7 @@ body {
     padding: 0 20px;
 }
 
-.button-panel .rounded-button {
+.rounded-button {
     color: #E4EFDE;
     border: 3px solid #E4EFDE; /* Thicker border */
     border-radius: 50px;
@@ -225,7 +225,7 @@ body {
     margin: 0 5px; /* Add 10px spacing between buttons (5px on each side) */
 }
 
-.button-panel .rounded-button:hover {
+.rounded-button:hover {
     background-color: #E4EFDE;
     color: #576653;
 }

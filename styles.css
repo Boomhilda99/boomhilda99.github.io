@@ -9,8 +9,12 @@
     color: white;
 }
 
-html, body{
-    background-color: black;
+html, body {
+  background-color: black;
+  background-image: url('assets/Background1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
 canvas{
@@ -20,29 +24,4 @@ canvas{
     width: 100%;
     height: 100svh;
     /* background-color: red; */
-}
-
-header{
-    position: relative;
-    height: 60px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding-left: 2rem;
-    background: black;
-}
-
-header h1{
-    font-size: 1rem;
-}
-
-.hero {
-    position: relative;
-    height: calc(100svh - 60px);
-}
-
-.hero h1{
-    position: absolute;
-    bottom: 2rem;
-    left: 2rem
 }

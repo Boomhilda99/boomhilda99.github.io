@@ -1,3 +1,4 @@
+/*
 *{
     margin: 0;
     padding: 0;
@@ -8,14 +9,46 @@
     font-weight: 400;
     color: white;
 }
+*/
 
-html, body {
+.cardcontainer {
+  display: flex;              /* establish flex container */
+  flex-direction: column;     /* stack flex items vertically */
+  justify-content: center;    /* center items vertically, in this case */
+  align-items: center;
+  height: 30em;
+  width: 40%;
+  height: 40%;
+}
+
+.card {
+  /* From https://css.glass */
+  background: rgba(25, 25, 25, 0.41);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.7px);
+  -webkit-backdrop-filter: blur(5.7px);
+  border: 1px solid rgba(255, 255, 255, 0.21);
+  width: fit-content();
+  height: fit-content();
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   background-color: black;
-  background-image: url('assets/Background1.jpg');
+  background-image: url('assets/Background2.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
 }
+
 
 canvas{
     position: absolute;

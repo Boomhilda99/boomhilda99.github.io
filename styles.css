@@ -36,6 +36,18 @@
   padding: 20px;
 }
 
+.title {
+  font-family: "PT Sans", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.line {
+  border: none;
+  border-top: 2px solid #ccc;
+  margin: 20px 0;
+}
+
 body {
   font-family: 'PT Sans', regular;
   color: white;

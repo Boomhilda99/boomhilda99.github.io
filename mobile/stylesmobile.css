@@ -1,0 +1,113 @@
+/*
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-width: 0;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
+}
+*/
+
+.cardcontainer {
+  display: flex;              /* establish flex container */
+  flex-direction: column;     /* stack flex items vertically */
+  justify-content: center;    /* center items vertically, in this case */
+  align-items: center;
+  height: 30em;
+  width: 40%;
+  height: 40%;
+}
+
+.card {
+  /* From https://css.glass */
+  background: rgba(25, 25, 25, 0.41);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.7px);
+  -webkit-backdrop-filter: blur(5.7px);
+  border: 1px solid rgba(255, 255, 255, 0.21);
+  width: fit-content();
+  height: fit-content();
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  font-family: "PT Sans", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.credits {
+  color: white;
+  opacity: 0.8;
+  font-family: "PT Sans", serif;
+  font-size: 0.65em;
+  text-shadow: 0px 0px 4px #000000;
+  font-style: normal;
+}
+
+.line {
+  border: none;
+  border-top: 2px solid #ccc;
+  margin: 20px 0;
+}
+
+/* FANCY BUTTONS */
+.fancy-button {
+    color: #E4EFDE;
+    border: 3px solid #E4EFDE; /* Thicker border */
+    border-radius: 50px;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0 5px; /* Add 10px spacing between buttons (5px on each side) */
+}
+
+.fancy-button:hover {
+    background-color: #E4EFDE;
+    color: #576653;
+}
+
+
+a {
+  color: white;
+}
+
+body {
+  font-family: 'PT Sans', regular;
+  color: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0,215,255);
+  background: linear-gradient(130deg, rgba(0,215,255,1) 0%, rgba(203,0,147,1) 100%);
+}
+
+
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100svh;
+    /* background-color: red; */
+}
+
+.pt-sans-regular {
+  font-family: "PT Sans", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-sans-bold {
+  font-family: "PT Sans", serif;
+  font-weight: 700;
+  font-style: normal;
+}

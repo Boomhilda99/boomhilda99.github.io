@@ -86,8 +86,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
   background: rgb(0,215,255);
   background: linear-gradient(130deg, rgba(0,215,255,1) 0%, rgba(203,0,147,1) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
 

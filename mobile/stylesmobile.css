@@ -1,24 +1,15 @@
-/*
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    min-width: 0;
-    font-family: sans-serif;
-    text-transform: uppercase;
-    font-weight: 400;
-    color: white;
-}
-*/
+/* old * {} stuff went here */
+
 
 .cardcontainer {
-  display: flex;              /* establish flex container */
-  flex-direction: column;     /* stack flex items vertically */
-  justify-content: center;    /* center items vertically, in this case */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   height: 30em;
-  width: 40%;
-  height: 40%;
+  width: 90%; /* More responsive for mobile */
+  max-width: 600px; /* Limit size on larger screens */
+  margin: auto;
 }
 
 .card {
@@ -29,8 +20,8 @@
   backdrop-filter: blur(5.7px);
   -webkit-backdrop-filter: blur(5.7px);
   border: 1px solid rgba(255, 255, 255, 0.21);
-  width: fit-content();
-  height: fit-content();
+  width: fit-content;
+  height: fit-content;
   margin: auto;
   text-align: center;
   padding: 20px;

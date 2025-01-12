@@ -1,0 +1,136 @@
+/*
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-width: 0;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
+}
+*/
+
+.cardcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Allow full width to prevent overflow */
+  height: 100%; /* Allow full height */
+}
+
+.card {
+  /* From https://css.glass */
+  background: rgba(25, 25, 25, 0.41);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.7px);
+  -webkit-backdrop-filter: blur(5.7px);
+  border: 1px solid rgba(255, 255, 255, 0.21);
+  min-width: 275px;
+  width: auto; /* Adjust size responsively */
+  max-width: 90%; /* Prevent card from being too wide */
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  font-family: "PT Sans", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.credits {
+  color: white;
+  opacity: 0.8;
+  font-family: "PT Sans", serif;
+  font-size: 0.72em;
+  text-shadow: 0px 0px 4px #000000;
+  font-style: normal;
+}
+
+.line {
+  border: none;
+  border-top: 2px solid #ccc;
+  margin: 20px 0;
+}
+
+/* FANCY BUTTONS */
+.fancy-button {
+    display: inline-block;
+    width: 100px;
+    color: #FAFAFA;
+    border: 3px solid #FAFAFA;
+    border-radius: 15px;
+    padding: 6px 12px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    margin: 5px 2px;
+}
+
+.fancy-button:hover {
+    background-color: #FAFAFA;
+    color: #202020;
+}
+
+.fancy-button.youtube:hover {
+    background-color: #FAFAFA;
+    color: #202020;
+    box-shadow: 0 0 15px rgba(190, 0, 0, 0.9); /* Brighter red glow on hover */
+}
+
+.fancy-button.twitter:hover {
+    background-color: #FAFAFA;
+    color: #202020;
+    box-shadow: 0 0 15px rgba(29, 161, 242, 0.9); /* Brighter red glow on hover */
+}
+
+.fancy-button.roblox:hover {
+    background-color: #FAFAFA;
+    color: #202020;
+    box-shadow: 0 0 15px rgba(160, 160, 160, 0.9); /* Brighter red glow on hover */
+}
+
+a {
+  color: white;
+}
+
+body {
+  font-family: 'PT Sans', regular;
+  color: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(0,215,255);
+  background: linear-gradient(130deg, rgba(0,215,255,1) 0%, rgba(203,0,147,1) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100svh;
+    /* background-color: red; */
+}
+
+.pt-sans-regular {
+  font-family: "PT Sans", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-sans-bold {
+  font-family: "PT Sans", serif;
+  font-weight: 700;
+  font-style: normal;
+}

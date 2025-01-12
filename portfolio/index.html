@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <!-- Start of title stuff -->
-    <title>Boomhilda99 | Portfolio</title>
+    <title>Boomhilda99 | Home</title>
     <meta content="Boomhilda99 | Portfolio" property="og:title" />
-    <meta content="Boomhilda99's super cool and very sigma portfolio." property="og:description" />
+    <meta content="Boomhilda99's portfolio." property="og:description" />
     <meta content="https://boomhilda99.github.io/portfolio" property="og:url" />
     <meta content="#9F09DC" data-react-helmet="true" name="theme-color" />
     <!-- End of title stuff, start of Google fonts -->
@@ -16,69 +16,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <!-- End of Google fonts, start of favicon stuff -->
-    <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png?" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg?" />
-    <link rel="shortcut icon" href="./favicon/favicon.ico?" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png?" />
-    <link rel="manifest" href="./favicon/site.webmanifest?" />
-    <!-- End of favicon stuff -->
+    <link rel="shortcut icon" href="./favicon/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <!-- End of favicon stuff, start of scripts -->
+    <script src="mobilecheckportfolio.js"></script>
+    <!-- End of scripts -->
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">Boomhilda99</div>
-        <div class="hamburger">&#9776;</div>
-        <div class="menu">
-            <a href="/">Home</a>
-            <a href="/portfolio" class="current">Portfolio</a>
-        </div>
-    </nav>
-    <div class="full-screen-menu">
-        <div class="close-btn">&times;</div>
-        <a href="/">Home</a>
-        <a href="/portfolio" class="current">Portfolio</a>
-    </div>
+    <canvas id="canvas"></canvas>
+    <script src="./bg.js"></script>
 
-    <div class="top-header">
-        <div class="overlay-text">
-            <div class="main-title">Boomhilda99</div>
-            <div class="title-subheading">Portfolio</div>
-        </div>
-    </div>
-
-    <div class="extra-content">
-        <div class="content-block image-block">
-            <img src="/assets/Boomhilda1.png" alt="Screenshot of a Roblox game.">
-        </div>
-        <div class="content-block text-block">
-            <div class="text-content">
-                <b>Survival game (inspired by Rust).</b>
-                <p>This a survival game I have been working on for a couple of months.</p>
-                <p>I do not know 3D modelling, so the models could do with some work.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="extra-content">
-        <div class="content-block image-block">
-            <img src="/assets/devices.jpg" alt="A laptop, phone, and tablet.">
-        </div>
-        <div class="content-block text-block">
-            <div class="text-content">
-                <b>Works with (almost) anything.</b>
-                <p>Phone, tablet, laptop, whatever you use, Lumion.live will work on it.</p>
-            </div>
-        </div>
-    </div>
-    <div class="extra-content">
-        <div class="content-block image-block">
-            <img src="/assets/motherboard.jpg" alt="A circuit board.">
-        </div>
-        <div class="content-block text-block">
-            <div class="text-content">
-                <b>Power on a budget.</b>
-                <p>Even our cheapest plan is very powerful, allowing you to do more, for less.</p>
-            </div>
-        </div>
+    <div class="cardcontainer">
+      <div class="card">
+          <h1 class="title">Boomhilda99</h1>
+          <p>My portfolio.</p>
+          <hr class="line">
+          <a href="https://www.youtube.com/@Boomhilda999" class="fancy-button youtube">YouTube</a>
+          <a href="https://www.x.com/OllyWanted" class="fancy-button twitter">Twitter (X)</a>
+          <br />
+          <a href="https://www.roblox.com/users/215574534/profile" class="fancy-button roblox">Roblox</a>
+          <a href="/portfolio" class="fancy-button">Portfolio</a>
+          <p class="credits">Designed by <a href="https://consciousb.one/">@ConsciousBone</a></p>
+      </div>
     </div>
 </body>
 </html>

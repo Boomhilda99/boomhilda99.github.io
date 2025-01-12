@@ -12,13 +12,12 @@
 */
 
 .cardcontainer {
-  display: flex;              /* establish flex container */
-  flex-direction: column;     /* stack flex items vertically */
-  justify-content: center;    /* center items vertically, in this case */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  height: 30em;
-  width: 40%;
-  height: 40%;
+  width: 100%; /* Allow full width to prevent overflow */
+  height: 100%; /* Allow full height */
 }
 
 .card {
@@ -29,8 +28,9 @@
   backdrop-filter: blur(5.7px);
   -webkit-backdrop-filter: blur(5.7px);
   border: 1px solid rgba(255, 255, 255, 0.21);
-  width: fit-content();
-  height: fit-content();
+  min-width: 275px;
+  width: auto; /* Adjust size responsively */
+  max-width: 90%; /* Prevent card from being too wide */
   margin: auto;
   text-align: center;
   padding: 20px;
@@ -62,20 +62,32 @@
     display: inline-block;
     width: 100px;
     color: #FAFAFA;
-    border: 3px solid #FAFAFA; /* Thicker border */
+    border: 3px solid #FAFAFA;
     border-radius: 15px;
     padding: 6px 12px;
     text-decoration: none;
     font-size: 18px;
-    transition: background-color 0.3s, color 0.3s;
-    margin: 5px 2px; /* Add 10px spacing between buttons (5px on each side) */
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    margin: 5px 2px;
 }
 
-.fancy-button:hover {
+.fancy-button.youtube:hover {
     background-color: #FAFAFA;
     color: #202020;
+    box-shadow: 0 0 15px rgba(190, 0, 0, 0.9); /* Brighter red glow on hover */
 }
 
+.fancy-button.twitter:hover {
+    background-color: #FAFAFA;
+    color: #202020;
+    box-shadow: 0 0 15px rgba(29, 161, 242, 0.9); /* Brighter red glow on hover */
+}
+
+.fancy-button.roblox:hover {
+    background-color: #FAFAFA;
+    color: #202020;
+    box-shadow: 0 0 15px rgba(160, 160, 160, 0.9); /* Brighter red glow on hover */
+}
 
 a {
   color: white;

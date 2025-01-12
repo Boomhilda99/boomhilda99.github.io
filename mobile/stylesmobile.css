@@ -20,8 +20,9 @@
   backdrop-filter: blur(5.7px);
   -webkit-backdrop-filter: blur(5.7px);
   border: 1px solid rgba(255, 255, 255, 0.21);
-  width: fit-content;
-  height: fit-content;
+  min-width: 175px;
+  width: auto; /* Adjust size responsively */
+  max-width: 90%; /* Prevent card from being too wide */
   margin: auto;
   text-align: center;
   padding: 20px;
@@ -50,19 +51,21 @@
 
 /* FANCY BUTTONS */
 .fancy-button {
-    color: #E4EFDE;
-    border: 3px solid #E4EFDE; /* Thicker border */
-    border-radius: 50px;
-    padding: 15px 30px;
+    display: inline-block;
+    width: 100px;
+    color: #FAFAFA;
+    border: 3px solid #FAFAFA;
+    border-radius: 15px;
+    padding: 6px 12px;
     text-decoration: none;
     font-size: 18px;
-    transition: background-color 0.3s, color 0.3s;
-    margin: 0 5px; /* Add 10px spacing between buttons (5px on each side) */
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    margin: 5px 2px;
 }
 
 .fancy-button:hover {
-    background-color: #E4EFDE;
-    color: #576653;
+    background-color: #FAFAFA;
+    color: #202020;
 }
 
 

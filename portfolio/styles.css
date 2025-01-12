@@ -71,7 +71,25 @@
     margin: 5px 2px;
 }
 
+.fancy-button.wide {
+    display: inline-block;
+    width: 200px;
+    color: #FAFAFA;
+    border: 3px solid #FAFAFA;
+    border-radius: 15px;
+    padding: 6px 12px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    margin: 5px 2px;
+}
+
 .fancy-button:hover {
+    background-color: #FAFAFA;
+    color: #202020;
+}
+
+.fancy-button.wide:hover {
     background-color: #FAFAFA;
     color: #202020;
 }
@@ -92,6 +110,12 @@
     background-color: #FAFAFA;
     color: #202020;
     box-shadow: 0 0 15px rgba(160, 160, 160, 0.9); /* Brighter red glow on hover */
+}
+
+/* IMAGES */
+.portfolio-image {
+  height: 400px;
+  width: 100%;
 }
 
 a {

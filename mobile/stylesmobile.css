@@ -71,6 +71,7 @@ a {
 }
 
 body {
+  overflow: hidden;
   font-family: 'PT Sans', regular;
   color: white;
   margin: 0;

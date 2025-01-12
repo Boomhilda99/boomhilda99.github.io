@@ -71,6 +71,11 @@
     margin: 5px 2px;
 }
 
+.fancy-button:hover {
+    background-color: #FAFAFA;
+    color: #202020;
+}
+
 .fancy-button.youtube:hover {
     background-color: #FAFAFA;
     color: #202020;

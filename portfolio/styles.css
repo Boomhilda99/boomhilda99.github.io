@@ -14,14 +14,12 @@
 .cardcontainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 20px; /* Space between rows */
+  padding-bottom: 20px; /* Ensures extra space below the last element */
   align-items: center;
-  width: 100%; /* Allow full width to prevent overflow */
-  height: 100%; /* Allow full height */
 }
 
 .card {
-  /* From https://css.glass */
   background: rgba(25, 25, 25, 0.41);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -29,9 +27,8 @@
   -webkit-backdrop-filter: blur(5.7px);
   border: 1px solid rgba(255, 255, 255, 0.21);
   min-width: 275px;
-  width: auto; /* Adjust size responsively */
-  max-width: 90%; /* Prevent card from being too wide */
-  margin: auto;
+  max-width: 90%;
+  margin-top: 20px; /* Consistent gap between top of the screen and card */
   text-align: center;
   padding: 20px;
 }
@@ -112,13 +109,31 @@
     box-shadow: 0 0 15px rgba(160, 160, 160, 0.9); /* Brighter red glow on hover */
 }
 
-/* IMAGES */
+/* PORTFOLIO */
+.portfolio-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 20px; /* Adjust the spacing between image and text */
+}
+
+.portfolio-row:nth-child(odd) {
+    flex-direction: row-reverse; /* Alternate layout for variety */
+}
+
+.portfolio-text {
+    flex: 1; /* Allow text to take up remaining space */
+    font-family: "PT Sans", serif;
+}
+
 .portfolio-image {
-  height: 180px;
-  width: 240px;
-  object-fit: cover;
-  border-radius: 15px;
-  border: 2px solid #FAFAFA;
+    flex: 0 0 240px; /* Fixed width for images */
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: 2px solid #FAFAFA;
+    object-fit: cover;
 }
 
 a {
@@ -130,14 +145,18 @@ body {
   color: white;
   margin: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
   background: rgb(0,215,255);
   background: linear-gradient(130deg, rgba(0,215,255,1) 0%, rgba(203,0,147,1) 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 0 60px; /* Bottom padding of 60px */
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
 

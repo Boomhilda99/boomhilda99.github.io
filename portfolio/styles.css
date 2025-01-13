@@ -128,7 +128,7 @@
 }
 
 .portfolio-image {
-    flex: 0 0 240px; /* Fixed width for images */
+    flex: 0 0 150px; /* Fixed width for images */
     max-width: 100%;
     height: auto;
     border-radius: 15px;

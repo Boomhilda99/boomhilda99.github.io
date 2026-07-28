@@ -1,0 +1,262 @@
+---
+import { Icon } from "astro-icon/components";
+const name = "Oliver";
+const description =
+  "I've made Roblox games, python tools, rust programs, geometry dash mods and websites.";
+const skills = [
+  {
+    name: "Rust",
+    colour: "#f74b00",
+    background: "#391607",
+    icon: "simple-icons:rust",
+  },
+  {
+    name: "Python",
+    colour: "#ccaa2e",
+    background: "#3e3410",
+    icon: "simple-icons:python",
+  },
+  {
+    name: "C++",
+    colour: "#659ad1",
+    background: "#10273f",
+    icon: "simple-icons:cplusplus",
+  },
+  {
+    name: "Roblox",
+    colour: "#bfbfbf",
+    background: "#444444",
+    icon: "simple-icons:roblox",
+  }
+];
+
+const findme = [
+  {
+    name: "GitHub",
+    icon: "simple-icons:github",
+    link: "https://github.com/boomhilda99"
+  },
+  {
+    name: "X (Twitter)",
+    icon: "simple-icons:twitter",
+    link: "https://twitter.com/Boomhilda99"
+  },
+  {
+    name: "Email",
+    icon: "mdi:email-outline",
+    link: "mailto:oliverdonald04172011@gmail.com"
+  }
+];
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Home Page</title></head>
+
+  <body>
+    <main>
+      <p class="label">Developer portfolio</p>
+      <h1>Hi, I'm <span>{name}.</span></h1>
+      <div class="main-body">
+        <h2>I make projects in:</h2>
+        <div class="skills">
+          {
+            skills.map((skill) => (
+              <span
+                style={`border-color:${skill.colour}; background-color:${skill.background}; box-shadow: 0 0 25px ${skill.colour}45;`}
+              >
+                <Icon
+                  name={skill.icon}
+                  width="25"
+                  height="25"
+                  style={`color: ${skill.colour}`}
+                />
+                {skill.name}
+
+              </span>
+            ))
+          }
+        </div>
+
+        <p class="description">
+          {description}
+        </p>
+
+        <a href="/projects" class="project-button">
+          <Icon
+            name="solar:programming-outline"
+            width="25"
+            height="25"
+          />
+          View my projects
+          <Icon
+            name="mdi-light:arrow-right"
+            width="25"
+            height="25"
+          />
+        </a>
+
+        <div class="findme">
+          {
+            findme.map((platform, index) => (
+              <a
+                href={platform.link}
+                target="_blank"
+              >
+                <Icon
+                  name={platform.icon}
+                  width="25"
+                  height="25"
+                />
+                {platform.name}
+                {index < findme.length - 1 && (
+                  <span class="separator">|</span>
+                )}
+              </a>
+            ))
+          }
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <style>
+    :global(*) {
+      box-sizing: border-box;
+    }
+
+    :global(body) {
+        margin: 0;
+        min-height: 100vh;
+
+        background: url("/images/background.png");
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        color: #f0f6fc;
+        font-family: Inter, system-ui, sans-serif;
+    }
+
+    .main-body {
+      margin-left: 12px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;  
+      gap: 10px;
+      margin: 0 12px;
+    }
+    .skills span {
+      padding: 8px 14px;
+      align-items: center;
+      display: flex;
+      gap: 8px;
+      border: 1px solid #30363d;
+      border-radius: 20px;
+      background: #161b22;
+      transition: transform 150ms ease;
+    }
+
+    .skills span:hover {
+      transform: translateY(-2px);
+    }
+
+    .findme {
+        position: fixed;
+
+        bottom: 20px;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        display: flex;
+        align-items: center;
+        gap: 0px;
+    }
+    .findme a {
+      padding: 8px 0px;
+      align-items: center;
+      display: inline-flex;
+      gap: 8px;
+
+      padding: 12px 5px;
+
+
+      color: #9b9a9a;
+      text-decoration: none;
+    }
+
+    main {
+      width: min(900px, calc(100% - 40px));
+      margin: 0 auto;
+      margin-left: 15%;
+      padding: 100px 0;
+    }
+
+
+    .label {
+      color: #9e60b1;
+      font-family: monospace;
+    }
+
+    h1 {
+      margin: 12px 0;
+      font-size: clamp(3rem, 9vw, 6rem);
+      line-height: 1;
+    }
+
+    h1 span {
+      color: #9e60b1;
+      text-shadow: 0 0 25px rgba(158, 89, 167, 0.55);
+    }
+    h2 {
+      margin: 12px 0;
+      font-size: clamp(1rem, 3vw, 2rem);
+      line-height: 1;
+    }
+
+    .description {
+      max-width: 650px;
+      color: #8b949e;
+      font-size: 1.25rem;
+      line-height: 1.5;
+    }
+
+    .project-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+
+        padding: 12px 15px;
+
+        border: 1px solid #30363d;
+        border-radius: 12px;
+
+        color: #ffffff;
+        text-decoration: none;
+
+        transition:
+            border-color .15s ease,
+            background-color .15s ease,
+            transform .15s ease,
+            box-shadow .15s ease;
+    }
+
+    .project-button:hover {
+        border-color: #604770;
+        background: #29202e55;
+        transform: scale(1.1);
+        box-shadow: 0 0 25px rgba(95, 49, 107, 0.35);
+    }
+    .project-button:active {
+        transform: scale(0.95);
+    }
+  </style>
+</html>

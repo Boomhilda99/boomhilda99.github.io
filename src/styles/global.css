@@ -75,12 +75,7 @@ a {
   color: #ffffff;
 }
 
-.hero {
-  width: min(900px, calc(100% - 40px));
-  margin-left: clamp(30px, 15vw, 260px);
-  padding: clamp(70px, 11vh, 130px) 0 90px;
-  flex: 1;
-}
+
 
 .hero-content {
   margin-left: 12px;
@@ -130,6 +125,12 @@ a {
   transition: transform 150ms ease;
 }
 
+.skill-badge svg {
+  width: 24px;
+  height: 24px;
+  color: var(--skill-colour);
+}
+
 .skill-badge:hover {
   transform: translateY(-2px);
 }
@@ -139,6 +140,13 @@ a {
   color: #a6a0ab;
   font-size: 1.2rem;
   line-height: 1.6;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
 }
 
 .primary-button {

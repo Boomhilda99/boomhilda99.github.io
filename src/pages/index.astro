@@ -15,19 +15,19 @@ const skills = [
     name: "Rust",
     colour: "#f74b00",
     background: "#391607",
-    icon: "logos:rust",
+    icon: "simple-icons:rust",
   },
   {
     name: "Python",
     colour: "#ccaa2e",
     background: "#3e3410",
-    icon: "logos:python",
+    icon: "simple-icons:python",
   },
   {
     name: "C++",
     colour: "#659ad1",
     background: "#10273f",
-    icon: "logos:c-plusplus",
+    icon: "simple-icons:cplusplus",
   },
   {
     name: "Roblox",
@@ -38,14 +38,14 @@ const skills = [
 ];
 ---
 
-<Layout title={`${name}'s Portfolio`} description={description}>
+<Layout title="Home | Oliver" description={description}>
   <Navbar />
-
-  <main class="hero">
+    
+  <main class="content-page">
+    <header class="page-header">
     <p class="eyebrow">Developer portfolio</p>
-
     <h1>Hi, I'm <span>{name}.</span></h1>
-
+    </header>
     <div class="hero-content">
       <h2>I make projects in:</h2>
 
@@ -58,12 +58,19 @@ const skills = [
       </div>
 
       <p class="description">{description}</p>
-
-      <a href="/projects" class="primary-button">
-        <Icon name="solar:programming-outline" width="25" height="25" />
-        View my projects
-        <Icon name="mdi-light:arrow-right" width="25" height="25" />
-      </a>
+      <div class="button-group">
+        <a href="/projects" class="primary-button">
+          <Icon name="solar:programming-outline" width="25" height="25" />
+          View my projects
+          <Icon name="mdi-light:arrow-right" width="25" height="25" />
+        </a>
+        
+        <a href="/about" class="primary-button">
+          <Icon name="mdi:person-outline" width="25" height="25" />
+          Learn more about me
+          <Icon name="mdi-light:arrow-right" width="25" height="25" />
+        </a>
+      </div>
     </div>
   </main>
 

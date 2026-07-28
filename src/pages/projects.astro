@@ -1,0 +1,59 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+
+const projects = [
+  {
+    title: "Rust To-Do List",
+    description:
+      "A desktop task manager built with Rust and Iced, with persistent task storage.",
+    image: "/images/todo-app.png",
+    technologies: ["Rust", "Iced", "JSON"],
+    github: "https://github.com/boomhilda99",
+  },
+  {
+    title: "Portfolio Website",
+    description:
+      "My personal developer portfolio, built with Astro and deployed through GitHub Pages.",
+    image: "/images/portfolio.png",
+    technologies: ["Astro", "HTML", "CSS"],
+    github: "https://github.com/boomhilda99/boomhilda99.github.io",
+    demo: "https://boomhilda99.github.io",
+  },
+  {
+    title: "Quickshell Desktop",
+    description:
+      "A custom desktop shell for Hyprland featuring a top bar, media controls and system shortcuts.",
+    image: "/images/quickshell.png",
+    technologies: ["QML", "Quickshell", "Hyprland"],
+    github: "https://github.com/boomhilda99",
+  },
+];
+---
+
+<Layout
+  title="Projects | Oliver"
+  description="A selection of programming projects made by Oliver."
+>
+  <Navbar />
+
+  <main class="content-page">
+    <header class="page-header">
+      <p class="eyebrow">Selected work</p>
+      <h1>Projects</h1>
+      <p>A selection of things I've designed, programmed and experimented with.</p>
+    </header>
+
+    <section class="project-grid" aria-label="Projects">
+      {
+        projects.map((project) => (
+          <ProjectCard {...project} />
+        ))
+      }
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

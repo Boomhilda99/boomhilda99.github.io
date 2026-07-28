@@ -1,0 +1,63 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  technologies: string[];
+  github?: string;
+  demo?: string;
+}
+
+const {
+  title,
+  description,
+  image,
+  technologies,
+  github,
+  demo,
+} = Astro.props;
+---
+
+<article class="project-card">
+  {
+    image && (
+      <img
+        class="project-image"
+        src={image}
+        alt={`${title} screenshot`}
+        loading="lazy"
+      />
+    )
+  }
+
+  <div class="project-content">
+    <h2>{title}</h2>
+    <p>{description}</p>
+
+    <div class="technology-list">
+      {technologies.map((technology) => <span>{technology}</span>)}
+    </div>
+
+    <div class="project-links">
+      {
+        github && (
+          <a href={github} target="_blank" rel="noopener noreferrer">
+            <Icon name="simple-icons:github" width="19" height="19" />
+            GitHub
+          </a>
+        )
+      }
+
+      {
+        demo && (
+          <a href={demo} target="_blank" rel="noopener noreferrer">
+            Live demo
+            <Icon name="mdi-light:arrow-right" width="22" height="22" />
+          </a>
+        )
+      }
+    </div>
+  </div>
+</article>

@@ -1,0 +1,23 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  name: string;
+  icon: string;
+  colour: string;
+  background: string;
+}
+
+const { name, icon, colour, background } = Astro.props;
+---
+
+<span
+  class="skill-badge"
+  style={`
+    --skill-colour: ${colour};
+    --skill-background: ${background};
+  `}
+>
+  <Icon name={icon} width="25" height="25" />
+  {name}
+</span>

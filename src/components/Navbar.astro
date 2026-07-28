@@ -1,0 +1,26 @@
+---
+const currentPath = Astro.url.pathname;
+
+const links = [
+  { name: "Home", href: "/" },
+  { name: "Projects", href: "/projects" },
+  { name: "About", href: "/about" },
+];
+---
+
+<nav class="navbar" aria-label="Main navigation">
+  <a class="brand" href="/">OD</a>
+
+  <div class="nav-links">
+    {
+      links.map((link) => (
+        <a
+          href={link.href}
+          class:list={{ active: currentPath === link.href }}
+        >
+          {link.name}
+        </a>
+      ))
+    }
+  </div>
+</nav>

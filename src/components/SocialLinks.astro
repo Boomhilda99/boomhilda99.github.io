@@ -1,0 +1,36 @@
+---
+import { Icon } from "astro-icon/components";
+
+const links = [
+  {
+    name: "GitHub",
+    icon: "simple-icons:github",
+    href: "https://github.com/boomhilda99",
+  },
+  {
+    name: "X",
+    icon: "simple-icons:x",
+    href: "https://x.com/YOUR_USERNAME",
+  },
+  {
+    name: "Email",
+    icon: "mdi:email-outline",
+    href: "mailto:YOUR_EMAIL@example.com?subject=Portfolio%20Enquiry",
+  },
+];
+---
+
+<div class="social-links" aria-label="Find me online">
+  {
+    links.map((link) => (
+      <a
+        href={link.href}
+        target={link.href.startsWith("http") ? "_blank" : undefined}
+        rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
+      >
+        <Icon name={link.icon} width="22" height="22" />
+        {link.name}
+      </a>
+    ))
+  }
+</div>

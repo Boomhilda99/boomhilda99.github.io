@@ -1,4 +1,4 @@
-# 🌐 Oliver Donald's Portfolio
+# Oliver Donald's Portfolio
 
 Welcome to my personal portfolio website, built with **Astro** and hosted using **GitHub Pages**.
 

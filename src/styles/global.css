@@ -88,7 +88,7 @@ a {
   text-transform: uppercase;
 }
 
-.hero h1,
+.content-page h1,
 .page-header h1,
 .not-found h1 {
   margin: 12px 0;
@@ -96,12 +96,12 @@ a {
   line-height: 1;
 }
 
-.hero h1 span {
+.content-page h1 span {
   color: #b777ca;
   text-shadow: 0 0 25px rgba(158, 89, 167, 0.55);
 }
 
-.hero h2 {
+.content-page h2 {
   margin: 18px 0;
   font-size: clamp(1.1rem, 3vw, 2rem);
 }
@@ -354,16 +354,6 @@ a {
 
   .nav-links {
     gap: 14px;
-  }
-
-  .hero {
-    width: min(100% - 32px, 700px);
-    margin: 0 auto;
-    padding-top: 65px;
-  }
-
-  .hero-content {
-    margin-left: 0;
   }
 
   .skills {

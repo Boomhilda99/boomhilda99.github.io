@@ -7,6 +7,7 @@ interface Props {
   image?: string;
   technologies: string[];
   github?: string;
+  roblox?: string;
   demo?: string;
 }
 
@@ -16,6 +17,7 @@ const {
   image,
   technologies,
   github,
+  roblox,
   demo,
 } = Astro.props;
 ---
@@ -50,6 +52,14 @@ const {
         )
       }
 
+      {
+        roblox && (
+          <a href={roblox} target="_blank" rel="noopener noreferrer">
+            <Icon name="simple-icons:roblox" width="19" height="19" />
+            Roblox
+          </a>
+        )
+      }
       {
         demo && (
           <a href={demo} target="_blank" rel="noopener noreferrer">

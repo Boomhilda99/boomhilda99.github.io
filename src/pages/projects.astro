@@ -6,10 +6,18 @@ import ProjectCard from "../components/ProjectCard.astro";
 
 const projects = [
   {
+    title: "Evenus Interpreter",
+    description:
+      "It is a programming language that has a modifiable syntax, which is changed in a .json file. I made this project to learn the basics of writing a programming language, and I heavily relied on Enums and structs throughout the project.",
+    image: "/images/projects/evenus-interpreter.png",
+    technologies: ["Rust"],
+    github: "https://github.com/Boomhilda99/evenus-interpreter",
+  },
+  {
     title: "Rust To-Do List",
     description:
-      "The first Rust project I made, a simple to-do list GUI application built with the `Iced` GUI library. This project tested my knowledge of Enum types and structs, and I'm really glad at how it looks.",
-    image: "/images/todo-app.png",
+      "The first Rust GUI project I made, a simple to-do list GUI application built with the `Iced` GUI library. This project tested my knowledge of Enum types and structs, and I'm really glad at how it looks.",
+    image: "/images/projects/todo-app.png",
     technologies: ["Rust", "Iced"],
     github: "https://github.com/Boomhilda99/to-do-list-gui",
   },
@@ -17,7 +25,7 @@ const projects = [
     title: "Portfolio Website",
     description:
       "This is the website you're currently on! I made this project to learn how to use Astro, and to make a portfolio website for myself. I learned a lot about Astro's component system, and how to use it to make a website that is both fast and easy to maintain.",
-    image: "/images/portfolio.png",
+    image: "/images/projects/portfolio.png",
     technologies: ["Astro", "HTML", "CSS"],
     github: "https://github.com/Boomhilda99/boomhilda99.github.io",
     demo: "https://boomhilda99.github.io",
@@ -26,7 +34,7 @@ const projects = [
     title: "The Ultimate Game Loader",
     description:
       "A joke mod I made for Geometry Dash to learn the syntax of C++ and geode's API. It lists the number of times you've loaded up the game on the title screen.",
-    image: "/images/ultimate-game-loader.png",
+    image: "/images/projects/ultimate-game-loader.png",
     technologies: ["C++", "Geode", "Geometry Dash"],
     github: "https://github.com/Boomhilda99/The-Ultimate-Game-Loader",
   },
@@ -34,7 +42,7 @@ const projects = [
     title: "QNA web-server",
     description:
       "The first time I setup a web server, and my first time I tried making styled HTML pages. This was a project I made to learn the basics of web development. My python code at the time was messy, but I learned a lot from this project.",
-    image: "/images/web-server.png",
+    image: "/images/projects/web-server.png",
     technologies: ["Python", "Flask", "HTML", "CSS"],
     github: "https://github.com/Boomhilda99/web-server",
   },
@@ -42,7 +50,7 @@ const projects = [
     title: "Bad Game Bird",
     description:
       "My first ever godot project, a simple flappy bird clone. I made this project to learn the basics of Godot and GDScript. I barely understood Godot's node system and used it to make a simple game.",
-    image: "/images/bad-game-bird.png",
+    image: "/images/projects/bad-game-bird.png",
     technologies: ["Godot", "GDScript"],
     github: "https://github.com/Boomhilda99/bad-game-bird",
   },
@@ -50,7 +58,7 @@ const projects = [
     title: "The Grave Digger",
     description:
       "A game I made in Godot to extend my knowledge of the engine and GDScript. I never finished the game, but I learned a lot about Godot's node system, and how to use it to make a reusable game object.",
-    image: "/images/the-grave-digger.png",
+    image: "/images/projects/the-grave-digger.png",
     technologies: ["Godot", "GDScript"],
     github: "https://github.com/Boomhilda99/the-grave-digger",
   },
@@ -58,7 +66,7 @@ const projects = [
     title: "Survival Game",
     description:
       "I made this project as an extension of an inventory system I had already made. I thought adding survival mechanics like mining stone and damaging other people could also extend my skills. Unfortunately, I never finished this project, but I learned a lot about module scripts so I could store pickaxe damage and block drops.",
-    image: "/images/survival-game.png",
+    image: "/images/projects/survival-game.png",
     technologies: [ "Lua", "Roblox Studio"],
     roblox: "https://www.roblox.com/games/117034171401417/Survival-Game",
   },
